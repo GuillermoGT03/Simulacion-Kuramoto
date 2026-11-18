@@ -1,0 +1,8 @@
+# Graficas de resultads
+plots/
+
+# Resultados de la simulacion
+results/
+
+# Cache modulos
+src/__pycache__

@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: python:3.13.2-slim
+
+%post
+    pip install --no-cache-dir \
+        numpy==2.2.2 scipy==1.15.1
+
+%files
+    simulate.py /app/simulate.py
+    src /app/src
+
+%runscript
+    exec python /app/simulate.py "$@"
